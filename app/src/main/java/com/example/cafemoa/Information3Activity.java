@@ -264,14 +264,16 @@ public class Information3Activity extends AppCompatActivity {
         switch (item.getItemId()){
 
             case R.id.see3Review:
-                Intent intent1=new Intent(Information3Activity.this,Review3Activity.class);
+                Intent intent1=new Intent(Information3Activity.this,Review2Activity.class);
                 Information3Activity.this.startActivity(intent1);
                 intent1.putExtra("name", mEditTextSearchKeyword1.getText().toString());
                 intent1.putExtra("loginID", loginID);
                 intent1.putExtra("loginSort", loginSort);
+                Information3Activity.this.startActivity(intent1);
+
                 break;
             case R.id.write3Review:
-                Intent intent2=new Intent(Information3Activity.this,Review3Activity.class);
+                Intent intent2=new Intent(Information3Activity.this,ReviewActivity.class);
                 intent2.putExtra("name", mEditTextSearchKeyword1.getText().toString());
                 intent2.putExtra("loginID", loginID);
                 intent2.putExtra("loginSort", loginSort);
